@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1 - Introduction to JavaScript</title>
+    <link rel="stylesheet" href="./styles/main.min.css">
+    
+    <!-- Include external script here -->
+
+</head>
+
+<body>
+
+    <header class="center">
+        <h1>Activity 1 - Introduction to JavaScript</h1>
+    </header>
+
+    <main>
+        
+        <!-- ===================== -->
+        <!--    WELCOME SECTION    -->
+        <!-- ===================== -->
+        <section id="welcome" class="center">
+
+            <script>
+                // Define the welcomeMessage variable
+                
+                // Assign a value to welcomeMessage to greet the user
+
+                // Display the message
+
+            </script>
+
+        </section>
+        <section id="content">
+
+            <!-- ===================== -->
+            <!--      FORM SECTION     -->
+            <!-- ===================== -->
+            <aside id="form">
+
+                <h2>Course Registration</h2>
+                
+                <form>
+
+                    <fieldset id="studentinfo">
+                        <legend>Student Information</legend>
+
+                        <label for="nameinput">Full Name</label>
+                        <input type="text" id="nameinput" name="name">
+
+                        <br>
+
+                        <label for="emailinput">School Email</label>
+                        <input type="email" id="emailinput" name="email">
+
+                        <br>
+
+                        <label for="programinput">Program of Study</label>
+                        <select id="programinput" name="program">
+                            <option value="Artificial Intelligence">Artificial Intelligence</option>
+                            <option value="Business">Business</option>
+                            <option value="Cybersecurity">Cybersecurity</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="General Education">General Education</option>
+                            <option value="Other">Other</option>
+                        </select>
+
+                    </fieldset>
+
+                    <fieldset id="courseinfo">
+                        <legend>Course Information</legend>
+
+                        <label for="courseinput">Course Name</label>
+                        <input type="text" id="courseinput" name="course">
+
+                        <br>
+
+                        <label for="titleinput">Course Title</label>
+                        <input type="text" id="titleinput" name="title">
+
+                        <br>
+
+                        <label for="creditsinput">Course Credits</label>
+                        <input type="number" id="creditsinput" name="credit" min="1" max="5">
+
+                    </fieldset>
+
+                    <div class="center">
+                        <input type="button" value="Submit" id="submitbutton" onclick="submitForm();">
+                    </div>
+
+                </form>
+
+            </aside>
+
+            <aside id="formresults">
+
+                <h2>Results</h2>
+
+                <p class="subtitle">Fill out the form and click Submit to see results.</p>
+
+                <div id="results">
+
+                    <!-- RESULTS WILL APPEAR HERE -->
+
+                </div>
+            </aside>
+
+            <!-- ====================== -->
+            <!--     SCRIPT SECTION     -->
+            <!-- ====================== -->
+             <script>
+                function submitForm() {
+                    // =====================
+                    // VARIABLES
+                    // =====================
+                    
+                    // Define elements
+                    let name = document.getElementById("nameinput");
+                    let email =
+
+                    // Create and assign the following variables:
+                    // program, courseName, courseTitle, credits, and results
+                    
+
+                    // Define headings
+                    let studentHeader = "Student Information";
+                    // Create and assign reigsteredHeader variable
+                    
+                    // =====================
+                    // RESULTS
+                    // =====================
+
+                    // Print results using concatenation
+                    results.innerHTML = "<strong>" + studentHeader + "</strong>";
+                    
+                    // Fill in the gaps with Email and Program value
+                    // Use concatenation to match the Name value
+                    results.innerHTML += "<p>Name: " + name.value + 
+                                         "<br>Email " + 
+                                         "<br>Program " + 
+                                         "</p>";
+
+                    // Print results using template literals
+
+                    // Complete the value for Title (courseTitle) and Credits
+                    // Include a break after Title
+                    results.innerHTML += `
+                        <strong> ${registeredHeader}</strong>  
+                        <p>
+                            Course: ${courseName.value}<br>
+                            Title: ${}<br>
+                            Credits: 
+                        </p>
+                        <p>Registration form was successfully submitted</p>
+                        `;
+                }
+             </script>
+             <!--
+                Move the JavaScript code above into form.js inside the scripts folder.
+                Remove this script element after creating form.js.
+                Then link form.js in the <head> section using the defer attribute.
+             -->
+
+        </section>
+
+        <!-- ====================== -->
+        <!--   REFLECTION SECTION   -->
+        <!-- ====================== -->
+        <section id="reflection">
+
+            <h2>Reflection Questions</h2>
+
+            <p>
+                Answer the following questions in the Questions & Answers section of index.html. Add your name and the date in the provided placeholders. Include the page number(s) from the textbook used to answer each question in parentheses at the end of your response.
+            </p>
+
+            <p class="student">
+                <!-- Your name here -->
+                <br>  
+                <!-- Current date here -->
+            </p>
+
+            <!-- QUESTION 1 -->
+            <p class="question">
+
+                1. Replace <code>program.value</code> with <code>program.selectedIndex</code>. What changed when you ran the program, and why might this be useful?
+
+            </p>
+            <p class="answer">
+
+                ANSWER: 
+
+            </p>
+
+            <!-- QUESTION 2 -->
+            <p class="question">
+
+                2. What is the purpose of the defer attribute when loading an external JavaScript file?
+
+            </p>
+            <p class="answer">
+
+                ANSWER: 
+
+            </p>
+
+            <!-- QUESTION 3 -->
+            <p class="question">
+
+                3. Where in an HTML file can you place a script tag?
+
+            </p>
+            <p class="answer">
+
+                ANSWER: 
+
+            </p>
+
+            <!-- QUESTION 4 -->
+            <p class="question">
+
+                4. What would happen if the onclick event attempted to call a function name that does not exist in form.js?
+
+            </p>
+            <p class="answer">
+
+                ANSWER: 
+
+            </p>
+
+            <!-- QUESTION 5 -->
+            <p class="question">
+
+                5. Explain how <code>document.getElementById()</code> was used in this activity.
+
+            </p>
+            <p class="answer">
+
+                ANSWER: 
+
+            </p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Cape Fear Community College, 2026</p>
+    </footer>
+
+</body>
+
+</html>
